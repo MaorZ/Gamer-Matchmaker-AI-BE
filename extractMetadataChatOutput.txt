@@ -1,0 +1,91 @@
+Can you please extract the following Game platforms (xbox, ps, pc, etc) and genres (hack n slack, strategy, etc...) from the following question?
+
+Please give me a game for wii that has alot of action and is rough like and have strategic elements in the game loop
+ChatGPT said:
+Sure! Here's the extraction based on your provided question:
+
+Platform: Wii
+Genres: Action, Strategy
+
+You said:
+again the same from the following question:
+Please find me a cool game with prices, dragons and dwarves for my windows
+ChatGPT said:
+Here’s the extraction from the new question:
+
+Platform: Windows
+Genres: (Not explicitly mentioned, but implied elements might include) Fantasy, RPG (due to dragons and dwarves)
+
+You said:
+Can you try the same question but now I will give you closed list of genres:
+[
+  { id: 2, name: 'Point-and-click' },
+  { id: 4, name: 'Fighting' },
+  { id: 5, name: 'Shooter' },
+  { id: 7, name: 'Music' },
+  { id: 8, name: 'Platform' },
+  { id: 9, name: 'Puzzle' },
+  { id: 10, name: 'Racing' },
+  { id: 11, name: 'Real Time Strategy (RTS)' },
+  { id: 12, name: 'Role-playing (RPG)' },
+  { id: 13, name: 'Simulator' },
+  { id: 14, name: 'Sport' },
+  { id: 15, name: 'Strategy' },
+  { id: 16, name: 'Turn-based strategy (TBS)' },
+  { id: 24, name: 'Tactical' },
+  { id: 25, name: "Hack and slash/Beat 'em up" },
+  { id: 26, name: 'Quiz/Trivia' },
+  { id: 30, name: 'Pinball' },
+  { id: 31, name: 'Adventure' },
+  { id: 32, name: 'Indie' },
+  { id: 33, name: 'Arcade' },
+  { id: 34, name: 'Visual Novel' },
+  { id: 35, name: 'Card & Board Game' },
+  { id: 36, name: 'MOBA' }
+]
+ChatGPT said:
+Based on your question and the provided list of genres, here's the extraction:
+
+Platform: Windows
+Genres:
+
+Role-playing (RPG) (due to dragons and dwarves)
+Adventure (based on the fantasy context of dragons and dwarves)
+Let me know if you need further details!
+
+You said:
+same with the following question:
+I want a game like Dota 2 with orc instead of heros for the ps
+ChatGPT said:
+Here’s the extraction from the provided question:
+
+Platform: PS (PlayStation)
+Genres:
+
+MOBA (due to the mention of Dota 2)
+Strategy (since MOBA games generally involve strategic elements)
+You said:
+can you return it as json format:
+object with platforms array and genres array
+ChatGPT said:
+Certainly! Here's the extraction in JSON format:
+
+json
+Copy
+{
+  "platforms": ["PS"],
+  "genres": ["MOBA", "Strategy"]
+}
+
+You said:
+can you return the IDs instead of the names of the genres?
+ChatGPT said:
+Sure! Here's the JSON with the genre IDs instead of the names:
+
+json
+Copy
+{
+  "platforms": ["PS"],
+  "genres": [36, 15]
+}
+
